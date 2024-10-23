@@ -32,7 +32,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="text-xl font-bold">Recipe Calories</a>
+          <a className="sm:text-xl font-bold text-lg">Recipe Calories</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

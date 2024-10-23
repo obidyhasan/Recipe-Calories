@@ -7,3 +7,7 @@
 body {
   font-family: "Lexend", sans-serif;
 }
+
+.banner-cover {
+  background-image: url("./assets/banner.png");
+}
