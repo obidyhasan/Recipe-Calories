@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function CookTable({ recipe, id }) {
+function CookTable({ recipe, id, handelPreparingEvent }) {
   const { name, preparing_time, calories } = recipe;
 
   return (
@@ -11,7 +11,10 @@ function CookTable({ recipe, id }) {
         <td>{preparing_time} min</td>
         <td>{calories}</td>
         <td>
-          <button className="btn btn-sm bg-green-500 text-white">
+          <button
+            onClick={() => handelPreparingEvent(recipe)}
+            className="btn btn-sm bg-green-500 text-white"
+          >
             Preparing
           </button>
         </td>
@@ -23,6 +26,7 @@ function CookTable({ recipe, id }) {
 CookTable.propTypes = {
   recipe: PropTypes.object.isRequired,
   id: PropTypes.number,
+  handelPreparingEvent: PropTypes.func.isRequired,
 };
 
 export default CookTable;
