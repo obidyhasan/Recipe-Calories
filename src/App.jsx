@@ -1,8 +1,10 @@
+import Navbar from "./Components/Navbar";
+
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className="max-w-7xl mx-auto px-5">
+      <Navbar></Navbar>
+    </div>
   );
 }
 
