@@ -1,13 +1,23 @@
+import CalculateTables from "./Components/CalculateTables";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import OurRecipe from "./Components/OurRecipe";
+import Recipes from "./Components/Recipes";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto px-5">
+    <div>
       <Navbar></Navbar>
-      <Header />
-      <OurRecipe />
+
+      <div className="max-w-7xl mx-auto px-5 pb-10">
+        <Header />
+        <OurRecipe />
+        {/* Container */}
+        <div className="flex gap-5 flex-col lg:flex-row">
+          <Recipes />
+          <CalculateTables />
+        </div>
+      </div>
     </div>
   );
 }
