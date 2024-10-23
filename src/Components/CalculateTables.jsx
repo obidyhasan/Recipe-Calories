@@ -1,8 +1,13 @@
-function CalculateTables() {
+import PropTypes from "prop-types";
+import CookTable from "./CookTable";
+
+function CalculateTables({ recipes }) {
   return (
     <div className="border rounded-md lg:w-2/5 p-4 h-min">
       <div>
-        <h1 className="text-center font-bold mb-3">Want to cook: {0}</h1>
+        <h1 className="text-center font-bold mb-3">
+          Want to cook: {recipes.length}
+        </h1>
         <hr />
         <div>
           <div className="overflow-x-auto">
@@ -18,20 +23,9 @@ function CalculateTables() {
                 </tr>
               </thead>
               <tbody>
-                {/* row 1 */}
-                <tr className="hover">
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>Desktop Support Technician</td>
-                  <td>Purple</td>
-                  <td>
-                    <button className="btn btn-sm bg-green-500 text-white">
-                      Preparing
-                    </button>
-                  </td>
-                </tr>
-
-                {/* Total */}
+                {recipes.map((recipe, idx) => (
+                  <CookTable key={idx} id={idx} recipe={recipe} />
+                ))}
               </tbody>
             </table>
           </div>
@@ -77,5 +71,9 @@ function CalculateTables() {
     </div>
   );
 }
+
+CalculateTables.propTypes = {
+  recipes: PropTypes.array.isRequired,
+};
 
 export default CalculateTables;

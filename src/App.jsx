@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CalculateTables from "./Components/CalculateTables";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
@@ -5,6 +6,12 @@ import OurRecipe from "./Components/OurRecipe";
 import Recipes from "./Components/Recipes";
 
 function App() {
+  const [recipes, setRecipes] = useState([]);
+
+  const handelWantToCook = (recipe) => {
+    setRecipes([...recipes, recipe]);
+  };
+
   return (
     <div>
       <Navbar></Navbar>
@@ -14,8 +21,8 @@ function App() {
         <OurRecipe />
         {/* Container */}
         <div className="flex gap-5 flex-col lg:flex-row">
-          <Recipes />
-          <CalculateTables />
+          <Recipes handelWantToCook={handelWantToCook} />
+          <CalculateTables recipes={recipes} />
         </div>
       </div>
     </div>

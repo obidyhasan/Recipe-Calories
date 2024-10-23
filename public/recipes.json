@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Grilled Chicken with Basil",
+    "short_description": "A healthy grilled chicken dish with fresh basil and mushrooms.",
+    "image": "https://i.ibb.co.com/kJHPWCQ/img6.png",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom",
+      "2 tbsp olive oil",
+      "1 tsp salt"
+    ],
+    "preparing_time": 30,
+    "calories": 320
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti Carbonara",
+    "short_description": "Classic Italian pasta with creamy sauce and pancetta.",
+    "image": "https://i.ibb.co.com/3p4WXsc/img5.png",
+    "ingredients": [
+      "400 g spaghetti",
+      "150 g pancetta",
+      "2 eggs",
+      "50 g grated Parmesan cheese",
+      "2 cloves garlic",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 25,
+    "calories": 450
+  },
+  {
+    "id": 3,
+    "name": "Vegetable Stir-fry",
+    "short_description": "A quick and easy stir-fry with mixed vegetables and soy sauce.",
+    "image": "https://i.ibb.co.com/r203S3g/img4.png",
+    "ingredients": [
+      "200 g broccoli",
+      "150 g bell peppers",
+      "100 g carrots",
+      "100 g snow peas",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil"
+    ],
+    "preparing_time": 20,
+    "calories": 200
+  },
+  {
+    "id": 4,
+    "name": "Beef Tacos",
+    "short_description": "Delicious beef tacos with a homemade spice mix.",
+    "image": "https://i.ibb.co.com/VprNJmG/img3.png",
+    "ingredients": [
+      "400 g ground beef",
+      "8 taco shells",
+      "100 g shredded lettuce",
+      "100 g diced tomatoes",
+      "50 g shredded cheese",
+      "1 tsp taco seasoning"
+    ],
+    "preparing_time": 30,
+    "calories": 400
+  },
+  {
+    "id": 5,
+    "name": "Caesar Salad",
+    "short_description": "A fresh Caesar salad with homemade croutons and dressing.",
+    "image": "https://i.ibb.co.com/0DFyD4V/img2.png",
+    "ingredients": [
+      "100 g romaine lettuce",
+      "50 g croutons",
+      "30 g Parmesan cheese",
+      "2 tbsp Caesar dressing",
+      "1 grilled chicken breast",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 15,
+    "calories": 250
+  },
+  {
+    "id": 6,
+    "name": "Chocolate Chip Cookies",
+    "short_description": "Classic homemade chocolate chip cookies, crisp on the outside, chewy on the inside.",
+    "image": "https://i.ibb.co.com/qpGrSKR/img1.png",
+    "ingredients": [
+      "250 g flour",
+      "150 g sugar",
+      "150 g butter",
+      "100 g chocolate chips",
+      "1 egg",
+      "1 tsp vanilla extract"
+    ],
+    "preparing_time": 40,
+    "calories": 300
+  }
+]
